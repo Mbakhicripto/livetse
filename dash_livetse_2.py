@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
-from tse_tools import *  # Replace with your own module
+tse_tools import *  # Replace with your own module
 
 # Load data
 df = get_all_market('stocks')
@@ -103,4 +103,5 @@ for asset_type in df['type_of_asset'].dropna().unique():
     st.plotly_chart(fig_asset, use_container_width=True)
 
 st.caption("© 2025 bakhezri Company | Powered by Live Market Data")
+
 
